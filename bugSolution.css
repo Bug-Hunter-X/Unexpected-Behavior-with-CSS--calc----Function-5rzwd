@@ -1,0 +1,30 @@
+/* Corrected CSS using calc() */
+
+/* Correct spacing */
+.element {
+  width: calc(100% - 20px); /* Correct: Space between operator and value */
+}
+
+/* Correct unit */
+.element {
+  height: calc(50% + 100px); /* Correct: uses valid px units */
+}
+
+/* Correct nesting */
+.element {
+  margin: calc( (100px + 50px) / 2 ); /* Correct: Proper nesting of expressions */
+}
+
+/* Correct variable use */
+:root {
+  --my-variable: 100px;
+}
+
+.element {
+  width: calc( var(--my-variable) * 2 ); /* Correct variable usage and unit */
+}
+
+/* Using calc() with different units correctly */
+.element {
+  width: calc( 50% - 10em ); /* Correct: mixes percentage and em units */
+}
